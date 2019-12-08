@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/kazuki19992/EductChat/issues"
   },
-  "homepage": "https://github.com/kazuki19992/EductChat#readme"
+  "homepage": "https://github.com/kazuki19992/EductChat#readme",
+  "devDependencies": {
+    "electron": "^7.1.3"
+  },
+  "dependencies": {
+    "photon": "github:connors/photon",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router": "^5.1.2"
+  }
 }
