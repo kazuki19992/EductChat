@@ -1,0 +1,19 @@
+{
+  "name": "eductchat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazuki19992/EductChat.git"
+  },
+  "author": "kazuki19992",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kazuki19992/EductChat/issues"
+  },
+  "homepage": "https://github.com/kazuki19992/EductChat#readme"
+}
