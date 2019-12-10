@@ -4,9 +4,11 @@
 
 import { app } from "electron";
 import createWindow from "./createWindow";
+import setAppMenu from "./setAppMenu";
 
 // Windowの作成
 app.on("ready", () => {
+    setAppMenu();
     createWindow();
 });
 
