@@ -22,4 +22,4 @@ app.on("activate", (_e, hasVisibleWindows) => {
     if (!hasVisibleWindows) {
         createWindow();
     }
-})
+});
