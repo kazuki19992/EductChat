@@ -41,22 +41,22 @@ export default class Login extends React.Component{
     handleOnSubmit(e){
         const {email, password} = this.state;
         const errors = [];
-        let isVaild = true;
+        let isValid = true;
         e.preventDefault();
 
         if(!email.length){
             // emailが空(未入力)の場合
-            isVaild = false;
+            isValid = false;
             errors.push("Email欄に入力してください！未入力はダメだよ！！");
         }
         
         if(!password.length){
             // passwordが空(未入力)の場合
-            isVaild = false;
+            isValid = false;
             errors.push("Password欄に入力してください！未入力はダメだよ！！");
         }
 
-        if(!isVaild){
+        if(!isValid){
             // 入力チェックでひっかかったらエラーを表示
             this.setState({errors});
             return;
@@ -107,9 +107,9 @@ export default class Login extends React.Component{
 
                 {/* ログインボタン */}
                 <div className="form-group">
-                    <button className="btn btn-large btn-default"><i class="fas fa-door-open"></i> Login</button>
+                    <button className="btn btn-large btn-default"><i class="fas fa-door-open"></i> おかえりなさい！</button>
                     <div style={SIGNUP_LINK_STYLE}>
-                        <Link to="/signup"><i class="fas fa-user-plus"></i> 新しくEductChatをはじめる！</Link>
+                        <Link to="/signup">新しくEductChatをはじめる！</Link>
                     </div>
                 </div>
             </form>

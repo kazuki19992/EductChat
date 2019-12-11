@@ -36,6 +36,8 @@ const firebaseConfig = {
     appId: "y:zzzzzzzzzzzzzzzzzzzz:web:xxxxxxxxxxxxxxxxxxxx",
     measurementId: "XXXXXXXXXXXXXXXXXXXXX"
 };
+
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
