@@ -3,25 +3,24 @@
 // Kazuki Kushida
 
 import { app } from "electron";
-import createWindow from "./createWindow";
 import setAppMenu from "./setAppMenu";
+import createWindow from "./createWindow";
 
-// Windowの作成
+// ウィンドウが開かれた時
 app.on("ready", () => {
-    setAppMenu();
-    createWindow();
+  setAppMenu();
+  createWindow();
 });
 
-// すべてのWindowが閉じられた時
+// Macでウインドウが閉じられた時
 app.on("window-all-closed", () => {
-    if (process.platform !== "darwin") {
-        // Mac_OSの場合、Windowが閉じられた場合、appも終了する
-        app.quit();
-    }
+  if (process.platform !== "darwin") {
+    app.quit();
+  }
 });
 
 app.on("activate", (_e, hasVisibleWindows) => {
-    if (!hasVisibleWindows) {
-        createWindow();
-    }
+  if (!hasVisibleWindows) {
+    createWindow();
+  }
 });

@@ -5,6 +5,7 @@ import Login from "./Login";
 import Signup from "./Signup";
 import Rooms from "./Rooms";
 import Room from "./Room";
+import firebase from "firebase/firebase-browser";
 
 // Routingの定義を行う
 const appRouting = (
@@ -23,6 +24,20 @@ const appRouting = (
 if(!location.hash.length){
     location.hash = "#/login";
 }
+
+// Firebaseの初期化
+const firebaseConfig = {
+    apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    authDomain: "yyyyyyyy.firebaseapp.com",
+    databaseURL: "https://yyyyyyyyyyy.firebaseio.com",
+    projectId: "yyyyyyyyyy",
+    storageBucket: "yyyyyyyyyy.appspot.com",
+    messagingSenderId: "zzzzzzzzzzzzzzzzzzz",
+    appId: "y:zzzzzzzzzzzzzzzzzzzz:web:xxxxxxxxxxxxxxxxxxxx",
+    measurementId: "XXXXXXXXXXXXXXXXXXXXX"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 // Applicationの描画
 render(appRouting, document.getElementById("app"));

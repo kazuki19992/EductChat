@@ -1,3 +1,7 @@
 node_modules
 
 src/renderer/app.jsx
+
+app_firebase-config.txt
+
+.tmp/

@@ -3,11 +3,9 @@ import { BrowserWindow } from "electron";
 let win;
 function createWindow() {
     win = new BrowserWindow();
-
-    // ここで読み込むファイルのパスを指定する！！
-    // win.loadURL(`file://${__dirname}/../../index.html`);
-    win.loadURL(`file:///home/kazuki19992/Documents/git/EductChat/index.html`);
-
+    
+    // ここで読み込むURLを指定する
+    win.loadURL(`file://${__dirname}/../../index.html`);
     win.on("close", () => {
         win = null;
     });
