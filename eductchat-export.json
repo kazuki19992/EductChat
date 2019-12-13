@@ -1,0 +1,20 @@
+{
+    "chatrooms": {
+        "-KMTZS-bjFZsoEEi9u4s":{
+            "description": "Test_Room_A",
+            "messages": {
+                "-KMT_to-J_2fFtR3GTdF": {
+                    "text": "テスト",
+                    "time": 1468318326087,
+                    "writtenBy": {
+                        "desplayName": "Example",
+                        "uid": "DgaimcPVZPQirzJqQpRG6klhZ5G3"
+                    }
+                }
+            }
+        },
+        "-KMTZS-bjFZsoExYoC8v2": {
+            "description": "テストルーム"
+        }
+    }
+}
