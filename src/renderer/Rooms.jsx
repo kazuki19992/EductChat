@@ -110,7 +110,7 @@ export default class Rooms extends React.Component {
             return (
                 <div className="text-center">
                     <div style={ICON_CHAT_STYLE}>
-                        <span className="icon icon-chat" />
+                        <img src="img/ProjectImage_alpha.png" />
                     </div>
                     <p>
                         左メニューからチャットルームに入室するか、＋ボタンで新しくルームをつくろう！

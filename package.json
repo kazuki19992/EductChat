@@ -1,8 +1,13 @@
 {
   "name": "eductchat",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": ".tmp/main/index.js",
+  "build":{
+    "files":[
+      "img/"
+    ]
+  },
   "scripts": {
     "clean": "rimraf .tmp dist release",
     "test": "eslint src/**/*.js src/**/*.jsx",
@@ -11,16 +16,16 @@
     "start": "electron .",
     "copy:resources": "cpx \"prod_resources/**/*\" dist",
     "copy:photon": "cpx \"node_modules/photon/dist/css/**/*\" dist/css && cpx \"node_modules/photon/dist/fonts/**/*\" dist/fonts",
-    "prebundle": "npm run copy:resources && npm run copy:photon",
+    "copy:img": "cpx \"img/*\" dist/img",
+    "prebundle": "npm run copy:resources && npm run copy:photon && npm run copy:img",
     "bundle": "webpack",
-    "package": "npm run bundle && electron-packager dist \"EductChat\" --all --out=release --icon=\"icon/icon\""
+    "package": "npm run bundle && electron-packager dist \"EductChat_ver.1.1.0\" --all --out=release --icon=\"icon/icon\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kazuki19992/EductChat.git"
   },
   "author": "kazuki19992",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kazuki19992/EductChat/issues"
   },
@@ -31,7 +36,7 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "cpx": "^1.3.1",
-    "electron": "^1.6.1",
+    "electron": "^1.8.8",
     "electron-packager": "^8.5.2",
     "webpack": "^2.2.0"
   },
