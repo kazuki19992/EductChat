@@ -1,4 +1,4 @@
-# EductChat (開発を一時凍結しています)
+# EductChat
 <center>
 <image src="img/ProjectImage.png">
 </center>
