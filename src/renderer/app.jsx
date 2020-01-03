@@ -9,14 +9,14 @@ import firebase from "firebase/firebase-browser";
 
 // Firebaseの初期化
 const firebaseConfig = {
-    apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    authDomain: "yyyyyyyy.firebaseapp.com",
-    databaseURL: "https://yyyyyyyyyyy.firebaseio.com",
-    projectId: "yyyyyyyyyy",
-    storageBucket: "yyyyyyyyyy.appspot.com",
-    messagingSenderId: "zzzzzzzzzzzzzzzzzzz",
-    appId: "y:zzzzzzzzzzzzzzzzzzzz:web:xxxxxxxxxxxxxxxxxxxx",
-    measurementId: "XXXXXXXXXXXXXXXXXXXXX"
+    apiKey: "AIzaSyAKNawBrTxK5ZIDMugNMTWupsN7e0x8SHU",
+    authDomain: "eductchat.firebaseapp.com",
+    databaseURL: "https://eductchat.firebaseio.com",
+    projectId: "eductchat",
+    storageBucket: "eductchat.appspot.com",
+    messagingSenderId: "993742711394",
+    appId: "1:993742711394:web:e80a20361c71f298267f3b",
+    measurementId: "G-R0GNB73ELV"
 };
 
 // Routingの定義を行う

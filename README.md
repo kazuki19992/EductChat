@@ -6,6 +6,7 @@
 ## EductChatとは??
 **Education + Electron + Chat = *EductChat***  
 技術評論社の**Electronではじめるアプリ開発 JavaScript/HTML/CSSでデスクトップアプリを作ろう**(野口将人・倉見洋輔 著)の第三章「チャットアプリケーションを作ろう」のコードを一部改変して作ったものです。  
+<!-- **コピペ、写経が多分に含まれています。** -->
 
 あの、弊学の演習環境のMacがOS X 10.9のMavericksで、かつChromeやFirefoxなどの  
 インストールされているブラウザのバージョンも低く、Slackが使えない状態でした。  
