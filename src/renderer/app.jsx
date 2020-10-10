@@ -17,7 +17,7 @@ const firebaseConfig = {
     messagingSenderId: "993742711394",
     appId: "1:993742711394:web:e80a20361c71f298267f3b",
     measurementId: "G-R0GNB73ELV"
-};
+  };
 
 // Routingの定義を行う
 const appRouting = (
